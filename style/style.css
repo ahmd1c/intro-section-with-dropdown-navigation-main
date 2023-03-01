@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 9%, 96%);
+    min-height: 100vh;
+}
+
+header{
+    padding:1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header h2 a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header nav #menu{
+    position: fixed;
+    top:25px;
+    right: 45px;
+    display: none;
+    cursor: pointer;
+}
+
+header nav ul .li-content{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: hsl(0, 0%, 41%);
+}
+
+header nav ul li{
+    cursor: pointer;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    font-size: 19px;
+    position: relative;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+
+header nav ul li ul{
+    position: absolute;
+    top: 180%;
+    border-radius: 15px;
+    margin: 0;
+    display: block;
+    padding: .4rem 1.1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 8px 11px 5px #80808057;
+}
+
+.menu-drop{
+    right: 0;
+    width: 180px;
+}
+
+.menu-drop2{
+    width: 140px;
+}
+
+header nav ul li ul li{
+    margin: .7rem 0;
+    display: flex;
+    padding: .5px 0;
+    gap: 1rem;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+header .sign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem;
+    flex-wrap: wrap;
+}
+
+@media(max-width:1000px) {
+    header .sign{
+    flex-direction: column;
+}
+}
+
+header .sign a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+header .sign button{
+    outline: none;
+    padding: .6rem 1.4rem;
+    color: hsl(0, 0%, 41%);
+    border-radius: .9rem;
+    border: 2px solid hsl(0, 0%, 41%);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header button:hover{
+    color: hsl(0, 0%, 8%);
+    border-color:hsl(0, 0%, 8%);
+    background-color: rgb(244, 245, 246);
+}
+
+header li:hover,
+header a:hover{
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+    border-color:hsl(0, 0%, 8%) ;
+}
+
+main{
+    padding: 1rem;
+    padding-inline: 7rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: calc(90vh - 105px);
+}
+
+main .text{
+    position: relative;
+}
+
+main .text h1{
+    font-size: 3.5rem;
+    margin-top: 5.7rem;
+}
+
+main .text p{
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.3rem;
+    margin-top: 1.3rem;
+    margin-bottom: 2.2rem;
+}
+
+main .text button{
+    outline: none;
+    padding: .6rem 1.4rem;
+    color:white;
+    background-color: #000;
+    border-radius: .6rem;
+    font-size: 18px;
+}
+
+main .text button:hover{
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+    background-color: white;
+    font-weight: 700;
+}
+main .image{
+    width: 430px;
+    margin-bottom: 4rem;
+}
+
+main .image img{
+    width:clamp(250px,100%,700px);
+}
+
+main .logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2rem;
+    margin-top: 4rem;
+}
+
+.attribution{
+    position: absolute;
+    bottom: -100px;
+    left:-50px;
+    font-size: 16px;
+}
+
+.attribution a{
+    text-decoration: none;
+}
+
+
+
+@media(max-width:1181px){
+    main{
+        flex-wrap: wrap;
+        padding-inline: 15rem;
+    }
+    
+    main .image{
+        width: 630px;
+        margin-bottom: 0rem;
+    }
+    main .text{
+        width: 630px;
+        padding-bottom: 1rem;
+    }
+    main .text p{
+        margin-bottom: 1rem
+    }
+    main .text h1{
+        margin-top: 2rem;
+    }
+    main .logos{
+        margin-top: 2rem;
+
+    }
+}
+@media(max-width:900px){
+    
+    .none{
+        display: none;
+    }
+
+    header nav #menu{
+    display: block;
+    z-index: 1000;
+    width: 50px;
+    }
+    header nav ul .li-content{
+    display: block;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    header nav ul{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:40%;
+    bottom: 0;
+    display: block;
+    padding: 4rem .7rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 400px #000000cf;
+    z-index: 111;
+    }
+    
+    
+    header nav ul li{
+    
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: .9rem;
+    display: block;
+    }
+
+    header nav ul li img{
+    width:12px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    }
+
+    header nav ul li ul{
+    position: static;
+    margin: 1rem 0;
+    display: block;
+    padding: .4rem 1.1rem;
+    padding-bottom: 0;
+    box-shadow: none;
+    }
+
+    header nav ul li ul li{
+    margin: 1rem 0;
+    margin-top: 0;
+    display: flex;
+    padding: .5px 0;
+    gap: 1rem;
+    align-items: center;
+    }
+
+    header nav ul li ul li img{
+    width: 18px;
+    }
+
+    .menu-drop{
+    right: 0;
+    width: auto;
+    }
+
+    .menu-drop2{
+    width: auto;
+    }
+
+    header .sign{
+    justify-content: flex-start;
+    gap: 1rem;
+    }
+
+    header .sign button{
+        width: clamp(80%,400px,80%);
+    }
+
+    main{
+        padding: 3.5rem;
+    }
+    main .image{
+        width: 900px;
+    }
+    main .text{
+        text-align: center;
+        width: 885px;
+        padding: .5rem;
+    }
+
+    main .text h1{
+        font-size: 1.6rem;
+    }
+
+    main .text h1 br{
+        display: none;
+    }
+    main .text p{
+        font-size: 17px;
+    }
+    main .text p br{
+        display: none;
+    }
+    main .logos{
+        padding: .5rem;
+        margin-top: 2rem;
+    }
+    main .logos img{
+        width: 65px;
+    }
+
+}
+
+@media(max-width:700px){
+    
+    header nav #menu{
+        right:15px;
+        width: 35px;
+    }
+
+    main{
+        padding: 0rem;
+    }
+    main .image{
+        width: 900px;
+    }
+    main .text{
+        text-align: center;
+        width: 885px;
+        padding: .5rem;
+    }
+
+    main .text h1{
+        font-size: 1.6rem;
+    }
+
+    main .text h1 br{
+        display: none;
+    }
+    main .text p{
+        font-size: 17px;
+    }
+    main .text p br{
+        display: none;
+    }
+    main .logos{
+        padding: .5rem;
+        margin-top: 2rem;
+    }
+    main .logos img{
+        width: 65px;
+    }
+}

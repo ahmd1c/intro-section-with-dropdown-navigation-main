@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro-section-with-dropdown-navigation-main</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2><a href="">snap</a></h2>
+            <img id="menu" src="images/icon-menu.svg" alt="">
+            <ul id="fixed">
+                <div class="li-content">
+
+                    <li id="Features">Features
+                        <img src="images/icon-arrow-down.svg" alt="">
+                            <ul class="menu-drop hidden">
+                                <li>
+                                    <img src="images/icon-todo.svg" alt="">
+                                    Todo List
+                                </li>
+                                <li>
+                                    <img src="images/icon-calendar.svg" alt="">
+                                    Calendar
+                                </li>
+                                <li>
+                                    <img src="images/icon-reminders.svg" alt="">
+                                    Reminders
+                                </li>
+                                <li>
+                                    <img src="images/icon-planning.svg" alt="">
+                                    Planning
+                                </li>
+                            </ul>
+                    </li>
+                    <li id="company">
+                        Company
+                        <img src="images/icon-arrow-down.svg" alt="">
+                            <ul class="menu-drop2 hidden">
+                                <li>History</li>
+                                <li>Our Team</li>
+                                <li>Blog</li>
+                            </ul>
+
+                    </li>
+                    <li>Careers</li>
+                    <li>About</li>
+                </div>
+
+                <div class="sign">
+                    <a href="">Login</a>
+                    <button>Register</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="image">
+            <picture>
+                <source media="(max-width:700px)" srcset="images/image-hero-mobile.png">
+                <img src="images/image-hero-desktop.png" alt="">
+            </picture>
+        </div>
+        <div class="text">
+            <h1>Make <br> remote work</h1>
+            <p>Get your team in sync, no matter your location. <br> Streamline processes, create team rituals, and <br> watch productivity soar. </p>
+            <button>Learn more</button>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://www.frontendmentor.io/profile/ahmd1c">ahmd1c</a>.
+            </div>
+            <div class="logos">
+                <img src="images/client-databiz.svg" alt="">
+                <img src="images/client-audiophile.svg" alt="">
+                <img src="images/client-meet.svg" alt="">
+                <img src="images/client-maker.svg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
